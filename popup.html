@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Download CSV</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+      background-color: #f4f4f4;
+      width:250px;
+    }
+
+    h2 {
+      color: #0056b3;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    button:active {
+      background-color: #1e7e34;
+    }
+    img {
+      width: 250px;
+      height: 250px;
+    }
+
+    /* Responsive design */
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="icons/icon.png">
+  <h2>How To Use:</h2>
+  <p>This extension will export all of the data on the Tags page only. Navigate to your tags page in GTM and hit the button below.</p>
+  <button id="downloadCsv">Download CSV</button>
+  <script src="popup.js"></script>
+</body>
+</html>

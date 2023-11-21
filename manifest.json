@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "GTM Data Extractor",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon.png",
+      "48": "icons/icon.png",
+      "128": "icons/icon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://tagmanager.google.com/*"],
+      "js": ["extract.js"]
+    }
+  ]
+}
